@@ -14,7 +14,7 @@ Visit the live website: [Full Stack Todo App](https://full-stack-todo-app-pearl.
 
 ## Screenshots 📸
 
-[![todo.png](https://i.postimg.cc/sD32PNwG/todo.png)](https://postimg.cc/3Wb7YnM3)
+[![Todos.png](https://i.postimg.cc/mD2szvbT/Todos.png)](https://postimg.cc/94SSsNRk)
 
 ---
 

@@ -1,7 +1,7 @@
 import axios from "axios";
 
-const baseUrl = "http://localhost:8000";
-
+const baseUrl = import.meta.env.VITE_BASE_URL;
+console.log(baseUrl);
 // Get All Tasks
 const getTodo = (setTodo) => {
   axios
@@ -21,7 +21,6 @@ const addTodo = (todoText, setTodoText, setTodo) => {
       .post(`${baseUrl}/save`, { text: todoText })
       .then((data) => {
         console.log("Task Added Successfully");
-        console.log(data);
         setTodoText("");
         getTodo(setTodo);
       })
@@ -36,7 +35,6 @@ const updateTodo = (_id, input, setTodo) => {
       .post(`${baseUrl}/update`, { _id: _id, text: input })
       .then((data) => {
         console.log("Task Updated Successfully!");
-        console.log(data);
         getTodo(setTodo);
       })
       .catch((error) => {

@@ -1,7 +1,7 @@
 require("dotenv").config({ path: "./.env" });
 const express = require("express");
 const dbConnect = require("./db/index");
-const route = require("../routes/ToDoRoute");
+const route = require("../src/routes/ToDoRoute");
 const cors = require("cors");
 
 const app = express();

@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const baseUrl = import.meta.env.VITE_BASE_URL;
-console.log(baseUrl);
+
 // Get All Tasks
 const getTodo = (setTodo) => {
   axios

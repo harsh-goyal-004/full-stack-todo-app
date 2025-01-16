@@ -14,7 +14,7 @@ router.post("/save", saveToDo);
 
 router.post("/update", updateTodo);
 
-router.delete("/delete", deleteTodo);
+router.delete("/delete/:id", deleteTodo);
 
 router.post("/complete", todoComplete);
 

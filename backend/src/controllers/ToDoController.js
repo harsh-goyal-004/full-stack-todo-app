@@ -38,7 +38,8 @@ updateTodo = async (req, res) => {
 
 // Delete Tasks
 deleteTodo = async (req, res) => {
-  const { _id } = req.body;
+  const _id = req.params.id;
+  console.log(_id);
   ToDoModel.deleteOne({ _id: _id })
     .then((data) => {
       console.log("Task Deleted Successfully");

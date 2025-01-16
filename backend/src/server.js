@@ -11,9 +11,9 @@ const port = process.env.PORT || 3000;
 dbConnect();
 
 // Middlewares
+app.use(cors());
 app.use(express.json());
 app.use(route);
-app.use(cors());
 
 app.listen(port, () => {
   console.log(`Listening on PORT: ${port}`);
